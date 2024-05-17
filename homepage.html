@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Space Tour</title>
+    <link rel="stylesheet" href="C:\Users\Udhayakumar\Documents\Html web dev\space tourism\e-style.css">
+    <link rel="icon" href="space_favicon.png">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Philosopher&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@600&display=swap');
+    </style>
+  </head>
+  <body class="home">
+   
+    <div class="topnav">
+      <img class="space-logo" src="space-tour-logo.png" alt="SPACE TOUR">
+      <a href="homepage.html" class="active">HOME</a>
+      <a href="destpage.html">DESTINATION</a>
+      <a href="crewpage.html">CREW</a>
+      <a href="techpage.html">TECHNOLOGY</a> 
+    </div>
+    <script>
+      let sections = document.querySelectorAll('section');
+      let navLinks = document.querySelectorAll('div a');
+      window.onscroll = () => {
+        sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+        if(top >= offset && top < offset + height) {
+            navLinks.forEach(links => {
+                links.classList.remove('active');
+                document.querySelector('div a[href*=' + id + ']').classList.add('active');
+               });
+            };
+         });
+      };
+    </script>
+    <p class="h2">SO, YOU WANT TO TRAVEL TO </p>
+    <h1 class="h1">SPACE</h1>
+    <p class="para">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+    <!-- <a href="#circle" class="circle">EXPLORE</a> -->
+    <div class="circle">
+      <p><a href="destpage.html">EXPLORE</a></p>
+    </div>
+  </body>
+</html>
