@@ -1,5 +1,5 @@
 body.home{
- background-image: url("planet.jpg");
+ background-image: url("images/planet.jpg");
  background-color: #cccccc;
  background-repeat: no-repeat;
  background-size: 100% 600px;
@@ -90,7 +90,7 @@ a.active {
 /* Destination page css ------------------------------------------------------ */
 
 body.desti{
- background-image: url("galaxy2.avif");
+ background-image: url("images/galaxy2.avif");
  background-color: #cccccc;
  background-repeat: no-repeat;
  background-size: 100%;
@@ -185,7 +185,7 @@ body.desti{
 
  /* Crew page CSS------------------------------------------------------------------------- */
  body.crew{
-  background-image: url("crewbg.avif");
+  background-image: url("images/crewbg.avif");
   background-color: #cccccc;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -294,7 +294,7 @@ body.desti{
 
  /* Technology page CSS--------------------------------------------------------------------- */
  body.tech{
-  background: url("techbg.avif") no-repeat center center fixed; 
+  background: url("images/techbg.avif") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
